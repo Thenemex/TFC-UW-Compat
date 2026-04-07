@@ -1,0 +1,99 @@
+{
+  "name":"baleen_whale",
+  "breeding":"MID_WINTER",
+  "growing_time":12,
+  "offspring":1,
+  "favourite_food":"untamedwilds:chum",
+  "sounds":{
+
+  },
+  "flags": {
+    "hasLongFins": 0
+  },
+  "species":[
+    {
+      "name":"blue",
+      "variant":0,
+      "scale":1.8,
+      "rarity":1,
+      "flags":{
+
+      },
+      "spawnBiomes":[
+        [
+          "resource|tfc:deep_ocean"
+        ]
+      ]
+    },
+    {
+      "name":"fin",
+      "variant":1,
+      "scale":1.6,
+      "rarity":1,
+      "flags":{
+
+      },
+      "spawnBiomes":[
+        [
+          "resource|tfc:deep_ocean"
+        ]
+      ]
+    },
+    {
+      "name":"gray",
+      "variant":2,
+      "scale":1.3,
+      "rarity":1,
+      "flags":{
+
+      },
+      "spawnBiomes":[
+        [
+          "resource|tfc:ocean"
+        ]
+      ]
+    },
+    {
+      "name":"humpback",
+      "variant":3,
+      "scale":1.3,
+      "rarity":1,
+      "flags":{
+        "hasLongFins": 1
+      },
+      "spawnBiomes":[
+        [
+          "resource|tfc:deep_ocean"
+        ]
+      ]
+    },
+    {
+      "name":"minke",
+      "variant":4,
+      "scale":1.0,
+      "rarity":3,
+      "flags":{
+
+      },
+      "spawnBiomes":[
+        [
+          "resource|tfc:ocean"
+        ]
+      ]
+    },
+    {
+      "name":"sei",
+      "variant":5,
+      "scale":1.35,
+      "rarity":1,
+      "flags":{
+
+      },
+      "spawnBiomes":[
+        [
+          "resource|tfc:deep_ocean"
+        ]
+      ]
+    }
+  ]
+}

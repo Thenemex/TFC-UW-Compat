@@ -1,0 +1,219 @@
+{
+  "name":"butterfly",
+  "breeding":"EARLY_SUMMER",
+  "growing_time":4,
+  "offspring":4,
+  "favourite_food":"tfc:plant/dandelion",
+  "sounds":{
+  },
+  "flags":{
+    "dimorphism": 0
+  },
+  "species":[
+    {
+      "name":"birdwing",
+      "variant":0,
+      "scale":1,
+      "rarity":1,
+      "spawnBiomes":[
+        [ "resource|tfc:low_canyons" ]
+      ]
+    },
+    {
+      "name":"blue_swallowtail",
+      "variant":1,
+      "scale":0.8,
+      "rarity":5,
+      "spawnBiomes":[
+        [ "resource|minecraft:meadow" ]
+      ]
+    },
+    {
+      "name":"brimstone",
+      "variant":2,
+      "scale":0.8,
+      "rarity":3,
+      "flags": {
+        "dimorphism": 1
+      },
+      "spawnBiomes":[
+        [ "resource|tfc:canyons" ],
+        [ "resource|tfc:lowlands" ],
+        [ "resource|tfc:hills" ]
+      ]
+    },
+    {
+      "name":"cabbage",
+      "variant":3,
+      "scale":0.7,
+      "rarity":5,
+      "spawnBiomes":[
+        [ "resource|tfc:mountains" ],
+        [ "resource|tfc:plains" ]
+      ]
+    },
+    {
+      "name":"comma",
+      "variant":4,
+      "scale":0.7,
+      "rarity":3,
+      "skins": 20,
+      "spawnBiomes":[
+        [ "resource|tfc:canyons" ],
+        [ "resource|tfc:rolling_hills" ]
+      ]
+    },
+    {
+      "name":"emperor",
+      "variant":5,
+      "scale":0.8,
+      "rarity":1,
+      "flags": {
+        "dimorphism": 1
+      },
+      "spawnBiomes":[
+        [ "resource|tfc:canyons" ],
+        [ "resource|tfc:rolling_hills" ]
+      ]
+    },
+    {
+      "name":"glasswing",
+      "variant":6,
+      "scale":0.7,
+      "rarity":3,
+      "spawnBiomes":[
+        [ "resource|tfc:low_canyons" ]
+      ]
+    },
+    {
+      "name":"kite",
+      "variant":7,
+      "scale":0.8,
+      "rarity":3,
+      "spawnBiomes":[
+        [ "resource|tfc:low_canyons" ],
+        [ "resource|tfc:lowlands" ]
+      ]
+    },
+    {
+      "name":"leaf",
+      "variant":8,
+      "scale":1,
+      "rarity":3,
+      "spawnBiomes":[
+        [ "resource|tfc:low_canyons" ]
+      ]
+    },
+    {
+      "name":"malachite",
+      "variant":9,
+      "scale":1,
+      "rarity":3,
+      "spawnBiomes":[
+        [ "resource|tfc:low_canyons" ]
+      ]
+    },
+    {
+      "name":"monarch",
+      "variant":10,
+      "scale":0.8,
+      "rarity":3,
+      "spawnBiomes":[
+        [ "resource|tfc:canyons" ],
+        [ "resource|tfc:plains" ]
+      ]
+    },
+    {
+      "name":"morpho",
+      "variant":11,
+      "scale":1,
+      "rarity":3,
+      "spawnBiomes":[
+        [ "resource|tfc:low_canyons" ]
+      ]
+    },
+    {
+      "name":"mourning_cloak",
+      "variant":12,
+      "scale":0.8,
+      "rarity":3,
+      "spawnBiomes":[
+        [ "resource|tfc:canyons" ],
+        [ "resource|tfc:hills" ]
+      ]
+    },
+    {
+      "name":"narcissus",
+      "variant":13,
+      "scale":0.8,
+      "rarity":3,
+      "skins": 20,
+      "spawnBiomes":[
+        [ "resource|tfc:low_canyons" ]
+      ]
+    },
+    {
+      "name":"orange_tip",
+      "variant":14,
+      "scale":0.7,
+      "rarity":3,
+      "flags": {
+        "dimorphism": 1
+      },
+      "spawnBiomes":[
+        [ "resource|tfc:plains" ],
+        [ "resource|tfc:canyons" ],
+        [ "resource|tfc:rolling_hills" ]
+      ]
+    },
+    {
+      "name":"peacock",
+      "variant":15,
+      "scale":0.7,
+      "rarity":3,
+      "spawnBiomes":[
+        [ "resource|tfc:canyons" ],
+        [ "resource|tfc:plains" ]
+      ]
+    },
+    {
+      "name":"red_admiral",
+      "variant":16,
+      "scale":0.7,
+      "rarity":3,
+      "spawnBiomes":[
+        [ "resource|tfc:canyons" ],
+        [ "resource|tfc:lowlands" ]
+      ]
+    },
+    {
+      "name":"speckled_wood",
+      "variant":17,
+      "scale":0.7,
+      "rarity":3,
+      "spawnBiomes":[
+        [ "resource|tfc:canyons" ],
+        [ "resource|tfc:rolling_hills" ]
+      ]
+    },
+    {
+      "name":"tiger_swallowtail",
+      "variant":18,
+      "scale":1,
+      "rarity":3,
+      "spawnBiomes":[
+        [ "resource|tfc:canyons" ],
+        [ "resource|tfc:plains" ]
+      ]
+    },
+    {
+      "name":"triangle",
+      "variant":19,
+      "scale":0.8,
+      "rarity":3,
+      "spawnBiomes":[
+        [ "resource|tfc:low_canyons" ]
+      ]
+    }
+  ]
+}

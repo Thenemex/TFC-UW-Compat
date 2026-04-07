@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:sand",
+    "#tfc:clay_grass",
+    "#tfc:dirt",
+    "#tfc:mud"
+  ]
+}

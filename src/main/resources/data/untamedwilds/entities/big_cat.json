@@ -1,0 +1,210 @@
+{
+  "name":"big_cat",
+  "breeding":"EARLY_SUMMER",
+  "growing_time":8,
+  "offspring":2,
+  "sounds":{
+    "ambient":"untamedwilds:entity.big_cat.ambient",
+    "hurt":"untamedwilds:entity.big_cat.hurt",
+    "death":"untamedwilds:entity.big_cat.death",
+    "threat":"untamedwilds:entity.big_cat.warning"
+  },
+  "flags":{
+    "fluffyTail": 0,
+    "dimorphism": 0
+  },
+  "species":[
+    {
+      "name":"cave_lion",
+      "variant":0,
+      "scale":1.1,
+      "rarity":1,
+      "breeding":"ALL",
+      "growing_time":6,
+      "offspring":2,
+      "activityType":"diurnal",
+      "favourite_food":"tfc:food/beef",
+      "attack":9,
+      "health":45,
+      "flags":{
+        "dimorphism":1,
+        "groupCount":3
+      },
+      "spawnBiomes":[
+        [ "resource|tfc:rolling_hills" ],
+        [ "tag|is_icy" ]
+      ]
+    },
+    {
+      "name":"jaguar",
+      "variant":1,
+      "scale":0.9,
+      "rarity":5,
+      "breeding":"ALL",
+      "growing_time":5,
+      "offspring":2,
+      "activityType":"crepuscular",
+      "favourite_food":"tfc:food/pork",
+      "attack":8,
+      "health":40,
+      "skins":30,
+      "flags":{
+
+      },
+      "spawnBiomes":[
+        [ "resource|tfc:low_canyons" ]
+      ]
+    },
+    {
+      "name":"leopard",
+      "variant":2,
+      "scale":0.9,
+      "rarity":5,
+      "breeding":"ALL",
+      "growing_time":5,
+      "offspring":2,
+      "activityType":"diurnal",
+      "favourite_food":"tfc:food/pork",
+      "attack":7,
+      "health":40,
+      "skins":30,
+      "flags":{
+
+      },
+      "spawnBiomes":[
+        [ "resource|tfc:hills" ],
+        [ "resource|tfc:plateau" ]
+      ]
+    },
+    {
+      "name":"lion",
+      "variant":3,
+      "scale":1,
+      "rarity":3,
+      "breeding":"ALL",
+      "growing_time":6,
+      "offspring":2,
+      "activityType":"diurnal",
+      "favourite_food":"tfc:food/beef",
+      "attack":8,
+      "health":40,
+      "skins": 20,
+      "flags":{
+        "dimorphism":1,
+        "groupCount":4
+      },
+      "spawnBiomes":[
+        [ "resource|tfc:plateau" ]
+      ]
+    },
+    {
+      "name":"marsupial_lion",
+      "variant":4,
+      "scale":0.8,
+      "rarity":1,
+      "breeding":"ALL",
+      "growing_time":6,
+      "offspring":1,
+      "activityType":"nocturnal",
+      "favourite_food":"tfc:food/chicken",
+      "attack":6,
+      "health":25,
+      "sounds":{
+        "ambient": "untamedwilds:entity.big_cat.ambient_meow"
+      },
+      "flags":{
+
+      },
+      "spawnBiomes":[
+        [ "resource|tfc:low_canyons" ]
+      ]
+    },
+    {
+      "name":"puma",
+      "variant":5,
+      "scale":0.8,
+      "rarity":8,
+      "breeding":"ALL",
+      "growing_time":4,
+      "offspring":3,
+      "activityType":"crepuscular",
+      "favourite_food":"tfc:food/rabbit",
+      "attack":6,
+      "health":30,
+      "sounds":{
+        "ambient": "untamedwilds:entity.big_cat.ambient_meow"
+      },
+      "flags":{
+
+      },
+      "spawnBiomes":[
+        [ "resource|inverted_badlands" ],
+        [ "resource|tfc:canyons" ],
+        [ "resource|tfc:rolling_hills" ]
+      ]
+    },
+    {
+      "name":"sabertooth",
+      "variant":6,
+      "scale":1,
+      "rarity":1,
+      "breeding":"ALL",
+      "growing_time":6,
+      "offspring":2,
+      "activityType":"diurnal",
+      "favourite_food":"tfc:food/beef",
+      "attack":9,
+      "health":40,
+      "flags":{
+
+      },
+      "spawnBiomes":[
+        [ "resource|tfc:rolling_hills" ]
+      ]
+    },
+    {
+      "name":"snow_leopard",
+      "variant":7,
+      "scale":0.8,
+      "rarity":5,
+      "breeding":"ALL",
+      "growing_time":5,
+      "offspring":3,
+      "activityType":"nocturnal",
+      "favourite_food":"tfc:food/beef",
+      "attack":8,
+      "health":30,
+      "sounds":{
+        "ambient": "untamedwilds:entity.big_cat.ambient_meow"
+      },
+      "flags":{
+        "fluffyTail":1
+      },
+      "spawnBiomes":[
+        [ "tag|is_icy" ],
+        [ "resource|tfc:hills" ],
+        [ "resource|tfc:mountains" ]
+      ]
+    },
+    {
+      "name":"tiger",
+      "variant":8,
+      "scale":1.1,
+      "rarity":3,
+      "breeding":"ALL",
+      "growing_time":6,
+      "offspring":2,
+      "activityType":"diurnal",
+      "favourite_food":"tfc:food/pork",
+      "attack":9,
+      "health":40,
+      "flags":{
+
+      },
+      "spawnBiomes":[
+        [ "resource|tfc:low_canyons" ],
+        [ "resource|tfc:rolling_hills" ]
+      ]
+    }
+  ]
+}

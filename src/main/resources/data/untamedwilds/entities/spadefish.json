@@ -1,0 +1,60 @@
+{
+  "name":"spadefish",
+  "breeding":"MID_SUMMER",
+  "growing_time":6,
+  "offspring":4,
+  "favourite_food":"minecraft:sea_grass",
+  "sounds":{
+
+  },
+  "species":[
+    {
+      "name":"atlantic",
+      "variant":0,
+      "scale":0.9,
+      "rarity":2,
+      "flags":{
+        "groupCount": 3
+      },
+      "spawnBiomes":[
+        [ "resource|tfc:ocean" ]
+      ]
+    },
+    {
+      "name":"dusky",
+      "variant":1,
+      "scale":1,
+      "rarity":2,
+      "flags":{
+        "groupCount": 3
+      },
+      "spawnBiomes":[
+        [ "resource|tfc:ocean_reef" ]
+      ]
+    },
+    {
+      "name":"orbicular",
+      "variant":2,
+      "scale":1.2,
+      "rarity":1,
+      "flags":{
+        "groupCount": 3
+      },
+      "spawnBiomes":[
+        [ "resource|tfc:ocean_reef" ]
+      ]
+    },
+    {
+      "name":"teira",
+      "variant":3,
+      "scale":1.3,
+      "rarity":2,
+      "flags":{
+        "groupCount": 3
+      },
+      "spawnBiomes":[
+        [ "resource|tfc:ocean" ]
+      ]
+    }
+  ]
+}

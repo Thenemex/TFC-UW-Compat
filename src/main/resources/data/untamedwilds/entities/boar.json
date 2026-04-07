@@ -1,0 +1,72 @@
+{
+  "name":"boar",
+  "breeding":"MID_WINTER",
+  "growing_time":4,
+  "offspring":4,
+  "activityType":"nocturnal",
+  "favourite_food":"tfc:food/beet",
+  "sounds":{
+    "ambient":"untamedwilds:entity.boar.ambient",
+    "hurt":"untamedwilds:entity.boar.hurt",
+    "death":"untamedwilds:entity.boar.death",
+    "threat":"untamedwilds:entity.boar.squeal"
+  },
+  "flags":{
+    "groupCount": 2,
+    "isWarthog":0
+  },
+  "species":[
+    {
+      "name":"eurasian",
+      "variant":0,
+      "scale":1.2,
+      "rarity":1,
+      "skins":40,
+      "flags":{
+        "groupCount": 2
+      },
+      "spawnBiomes":[
+        [ "resource|tfc:canyons" ],
+        [ "resource|tfc:rolling_hills" ]
+      ]
+    },
+    {
+      "name":"peccary",
+      "variant":1,
+      "scale":1,
+      "rarity":1,
+      "flags":{
+        "groupCount": 2
+      },
+      "spawnBiomes":[
+        [ "resource|tfc:low_canyons" ]
+      ]
+    },
+    {
+      "name":"red_river",
+      "variant":2,
+      "scale":1,
+      "rarity":1,
+      "flags":{
+        "groupCount": 2
+      },
+      "spawnBiomes":[
+        [ "resource|tfc:plateau" ],
+        [ "resource|tfc:lowlands" ]
+      ]
+    },
+    {
+      "name":"warthog",
+      "variant":3,
+      "scale":1.2,
+      "rarity":1,
+      "flags":{
+        "isWarthog": 1,
+        "groupCount": 2
+      },
+      "spawnBiomes":[
+        [ "resource|tfc:plateau" ]
+      ]
+    }
+  ]
+}

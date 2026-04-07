@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#tfc:dirt",
+    "#tfc:clay_grass",
+    "#tfc:grass",
+    "#tfc:mud"
+  ]
+}
