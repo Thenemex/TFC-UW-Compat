@@ -1,8 +1,8 @@
 package tfcuwcompat;
 
-import net.minecraft.world.entity.MobCategory;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
+import net.minecraftforge.event.entity.living.LivingSpawnEvent;
+import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import tfcuwcompat.api.logger.Logger;
@@ -19,15 +19,13 @@ public class TFCUWCompat {
     }
 
     @SubscribeEvent
-    public void onBiomeLoading(BiomeLoadingEvent event) {
-        // remove all Untamed Wilds spawns
-        for (MobCategory category : MobCategory.values()) {
-            event.getSpawns().getSpawnerData(category).removeIf(spawnerData -> {
-                if (spawnerData.type != null && spawnerData.type.getRegistryName() != null) {
-                    return "untamedwilds".equals(spawnerData.type.getRegistryName().getNamespace());
-                }
-                return false;
-            });
+    public void onCheckSpawn(LivingSpawnEvent.CheckSpawn event) {
+        // block all the Untamed Wilds spawns
+        if (event.getEntity() != null && event.getEntity().getType().getRegistryName() != null) {
+            if ("untamedwilds".equals(event.getEntity().getType().getRegistryName().getNamespace())) {
+                event.setResult(Event.Result.DENY);
+            }
         }
     }
+    
 }
