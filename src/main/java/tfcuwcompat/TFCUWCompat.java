@@ -1,8 +1,9 @@
 package tfcuwcompat;
 
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.EntityType;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.entity.living.LivingSpawnEvent;
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.event.entity.living.MobSpawnEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import tfcuwcompat.api.logger.Logger;
@@ -15,16 +16,13 @@ public class TFCUWCompat {
 
     public TFCUWCompat() {
         MinecraftForge.EVENT_BUS.register(this);
-        logger.info(""); // idk what you put when you
     }
 
     @SubscribeEvent
-    public void onCheckSpawn(LivingSpawnEvent.CheckSpawn event) {
-        // block all the Untamed Wilds spawns
-        if (event.getEntity() != null && event.getEntity().getType().getRegistryName() != null) {
-            if ("untamedwilds".equals(event.getEntity().getType().getRegistryName().getNamespace())) {
-                event.setResult(Event.Result.DENY);
-            }
+    public static void onFinalizeSpawn(MobSpawnEvent.FinalizeSpawn event) {
+        ResourceLocation id = EntityType.getKey(event.getEntity().getType());
+        if (id.getNamespace().equals("untamedwilds")) {
+            event.setSpawnCancelled(true);
         }
     }
     
