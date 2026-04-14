@@ -20,26 +20,19 @@ public class TFCUWCompat {
         logger.info("Loading mod ...");
     }
 
-    /*
-    @SubscribeEvent
-    public static void onFinalizeSpawn(MobSpawnEvent.FinalizeSpawn event) {
-        ResourceLocation id = EntityType.getKey(event.getEntity().getType());
-        logger.info("Spawning :", id.getNamespace(), id.getPath());
-        if (id.getNamespace().equals("untamedwilds")) {
-            event.setSpawnCancelled(true);
-            logger.info("Cancelled :", id.getNamespace(), id.getPath());
-        }
-    }
-    */
+    @SubscribeEvent(priority = EventPriority.NORMAL)
+    public void blockDefaultUWSpawns(MobSpawnEvent.FinalizeSpawn event) {
+        Entity entity = event.getEntity();
 
-    @SubscribeEvent
-    public static void onEntityJoin(EntityJoinLevelEvent event) {
-        ResourceLocation id = EntityType.getKey(event.getEntity().getType());
-        logger.info("Spawning :", id.getNamespace(), id.getPath());
-        if (id.getNamespace().equals("untamedwilds")) {
-            event.setCanceled(true);
-            logger.info("Cancelled :", id.getNamespace(), id.getPath());
+        ResourceLocation key = ForgeRegistries.ENTITY_TYPES.getKey(entity.getType());
+        if (key == null || !"untamedwilds".equals(key.getNamespace())) {
+            return;
+        }
+
+        MobSpawnType type = event.getSpawnType();
+
+        if (type == MobSpawnType.NATURAL) {
+            event.setSpawnCancelled(true);
         }
     }
-    
 }
